@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Linting */
+    "strict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitAny": false,
+    "noFallthroughCasesInSwitch": false,
+    "strictNullChecks": false,
+
+    /* Ignore deprecation warnings for TS 7 */
+    "ignoreDeprecations": "5.0",
+
+    /* Path aliases */
+    "paths": {
+      "@/*": ["client/*"],
+      "@shared/*": ["shared/*"]
+    }
+  },
+  "include": ["client/**/*", "server/**/*", "shared/**/*"]
+}
