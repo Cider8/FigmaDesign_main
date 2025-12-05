@@ -120,8 +120,8 @@ export default function Header() {
   const [openLogin, setOpenLogin] = useState(false);    // ⬅️ ADD THIS
 
   return (
-    <header className="bg-white border-b border-gray-800">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-left justify-between">
+    <header className="w-full max-w-[1550px] h-[72px] mx-auto bg-white border-b border-gray-900">
+      <nav className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-left justify-between">
         
         {/* Desktop Menu */}
         <div className="hidden md:flex items-left space-x-8">
@@ -170,17 +170,17 @@ export default function Header() {
         </div>
 
         {/* Mobile Menu Button */}
-        <button
+        {/* <button
           className="md:hidden"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        </button> */}
       </nav>
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden border-t border-gray-200 bg-white">
+        <div className="md:hidden border-t border-gray-800 bg-white">
           <div className="px-4 py-4 space-y-3">
             <Link to="/about" className="block text-gray-700 hover:text-gray-900 py-2">
               About us

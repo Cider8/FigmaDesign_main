@@ -32,8 +32,8 @@ export default function Footer() {
             <p className="text-sm text-gray-700 dark:text-gray-400 mt-3" style={{ fontFamily: 'Roboto', fontWeight: 400 }}>
               We respect your inbox and handle your data with care.
             </p> */}
-            <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">Logo</h3>
+            <div className="max-w-[500px] h-[186px] md:col-span-2">
+            <h3 className="text-2xl font-bold mb-4 font-roboto italic">Logo</h3>
 
             {/* FIXED: text-gray-800 changed to dark:text-gray-300 for readability */}
             <p className="text-base text-gray-700 dark:text-gray-300 mb-6">
@@ -183,7 +183,7 @@ export default function Footer() {
                     <path d="M15.12 8.5h1.88V5.5h-1.9c-1.88 0-3.12 1.1-3.12 3.12v1.38H9.5v2.5h2.48V19h2.77v-6.5h2.05l.4-2.5h-2.45V9.12c0-.6.16-.62.9-.62z" fill="#fff"/>
                   </svg>
                 </span>
-                <span style={{ fontFamily: 'Roboto', fontWeight: 400 }}>Facebook</span>
+                <span style={{ fontFamily: 'Roboto', fontSize: 'max-w-[61px] h-[21px]', fontWeight: 400 }}>Facebook</span>
               </a>
 
               {/* Instagram */}
@@ -195,7 +195,7 @@ export default function Footer() {
                     <circle cx="17" cy="7" r="0.8" fill="#0a0a0aff" />
                   </svg>
                 </span>
-                <span style={{ fontFamily: 'Roboto', fontWeight: 400 }}>Instagram</span>
+                <span style={{ fontFamily: 'Roboto', fontSize: 'max-w-[64px] h-[21px]', fontWeight: 400 }}>Instagram</span>
               </a>
 
               {/* X / Twitter as X */}
@@ -206,7 +206,7 @@ export default function Footer() {
                     <path d="M6 6L18 18" stroke="#0f0f0fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </span>
-                <span style={{ fontFamily: 'Roboto', fontWeight: 400 }}>X</span>
+                <span style={{ fontFamily: 'Roboto', fontSize: 'max-w-[9px] h-[21px]', fontWeight: 400 }}>X</span>
               </a>
 
               {/* LinkedIn */}
@@ -216,7 +216,7 @@ export default function Footer() {
                     <path d="M4.98 3.5C4.98 4.6 4.08 5.5 2.98 5.5C1.88 5.5 1 4.6 1 3.5C1 2.4 1.9 1.5 3 1.5C4.1 1.5 4.98 2.4 4.98 3.5ZM1.5 8.5H4.5V20.5H1.5V8.5ZM8.5 8.5H11.2V10H11.3C11.8 9 13.3 7.8 15.5 7.8C19 7.8 19.5 10.2 19.5 13.2V20.5H16.5V13.9C16.5 12.2 16.4 10 14 10C11.6 10 11.2 11.9 11.2 13.8V20.5H8.5V8.5Z" fill="#fff" />
                   </svg>
                 </span>
-                <span style={{ fontFamily: 'Roboto', fontWeight: 400 }}>LinkedIn</span>
+                <span style={{ fontFamily: 'Roboto', fontSize: 'max-w-[53px] h-[21px]', fontWeight: 400 }}>LinkedIn</span>
               </a>
 
               {/* YouTube */}
@@ -252,7 +252,7 @@ export default function Footer() {
                   </svg>
                 </span>
 
-                <span style={{ fontFamily: "Roboto", fontWeight: 400 }}>
+                <span style={{ fontFamily: "Roboto", fontSize: "max-w-[55px] h-[21px]", fontWeight: 400 }}>
                   YouTube
                 </span>
               </a>
