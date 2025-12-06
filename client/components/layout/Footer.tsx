@@ -188,7 +188,7 @@ export default function Footer() {
                 <img
                   src="/icons/Facebook.svg"
                   alt="Facebook"
-                  className="w-6 h-6"
+                  className="w-6 h-6 dark:bg-white"
                   aria-hidden={false}
                 />
                 <span style={{ fontFamily: 'Roboto', fontSize: 'max-w-[61px] h-[21px]', fontWeight: 400 }}>Facebook</span>
@@ -199,7 +199,7 @@ export default function Footer() {
                 <img
                   src="/icons/Instagram.svg"
                   alt="Instagram"
-                  className="w-6 h-6"
+                  className="w-6 h-6 dark:bg-white"
                   aria-hidden={false}
                 />
                 <span className="text-sm" style={{ fontFamily: 'Roboto', fontWeight: 400 }}>
@@ -213,7 +213,7 @@ export default function Footer() {
                 <img
                   src="/icons/X.svg"
                   alt="X"
-                  className="w-6 h-6"
+                  className="w-6 h-6 dark:bg-white"
                   aria-hidden={false}
                 />
                 
@@ -225,7 +225,7 @@ export default function Footer() {
                   <img
                     src="/icons/linkedin.svg"
                     alt="Linkedin"
-                    className="w-6 h-6"
+                    className="w-6 h-6 dark:bg-white"
                     aria-hidden={false}
                   />
                 
@@ -238,7 +238,7 @@ export default function Footer() {
                 <img
                   src="/icons/YouTube.svg"
                   alt="YouTube"
-                  className="w-6 h-6"
+                  className="w-6 h-6 dark:bg-white"
                   aria-hidden={false}
                 />
 
