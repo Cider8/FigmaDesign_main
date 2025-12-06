@@ -107,12 +107,12 @@ export default function Index() {
       </section>
 
       {/* Car Image Section */}
-      <section className="w-full bg-gradient-to-b from-gray-100 to-white dark:from-gray-800 dark:to-gray-900 py-8">
+      <section className="w-full  py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F0755ff6263e74c71a9c43f108545303d%2Fed87258741ce48b98994f26a6fa224b1?format=webp&width=800"
             alt="Automotive design"
-            className="w-full h-auto rounded-lg shadow-lg"
+            className="w-full h-full object-cover"
           />
         </div>
       </section>
@@ -159,7 +159,7 @@ export default function Index() {
               <h3 className="text-base md:text-lg font-semibold text-gray-900 dark:text-white mb-2" style={{ fontFamily: 'Roboto, sans-serif', fontWeight: 600 }}>
                 Concept development
               </h3>
-              <p className="text-sm text-gray-700 dark:text-gray-400 max-w-xs mx-auto" style={{ fontFamily: 'Roboto, sans-serif', fontWeight: 400, lineHeight: 1.4 }}>
+              <p className="text-sm text-gray-800 dark:text-gray-400 max-w-xs mx-auto" style={{ fontFamily: 'Roboto, sans-serif', fontWeight: 400, lineHeight: 1.4 }}>
                 We translate your vision into compelling design directions that capture market potential.
               </p>
             </div>
@@ -190,7 +190,7 @@ export default function Index() {
               <h3 className="text-base md:text-lg font-semibold text-gray-900 dark:text-white mb-2" style={{ fontFamily: 'Roboto, sans-serif', fontWeight: 600 }}>
                 Digital modelling
               </h3>
-              <p className="text-sm text-gray-700 dark:text-gray-400 max-w-xs mx-auto" style={{ fontFamily: 'Roboto, sans-serif', fontWeight: 400, lineHeight: 1.4 }}>
+              <p className="text-sm text-gray-800 dark:text-gray-400 max-w-xs mx-auto" style={{ fontFamily: 'Roboto, sans-serif', fontWeight: 400, lineHeight: 1.4 }}>
                 Advanced 3D visualization and rendering bring your designs to life with photorealistic precision.
               </p>
             </div>
@@ -221,21 +221,29 @@ export default function Index() {
               <h3 className="text-base md:text-lg font-semibold text-gray-900 dark:text-white mb-2" style={{ fontFamily: 'Roboto, sans-serif', fontWeight: 600 }}>
                 Prototyping
               </h3>
-              <p className="text-sm text-gray-700 dark:text-gray-400 max-w-xs mx-auto" style={{ fontFamily: 'Roboto, sans-serif', fontWeight: 400, lineHeight: 1.4 }}>
+              <p className="text-sm text-gray-800 dark:text-gray-400 max-w-xs mx-auto" style={{ fontFamily: 'Roboto, sans-serif', fontWeight: 400, lineHeight: 1.4 }}>
                 From clay models to functional prototypes, we validate design intent before production.
               </p>
             </div>
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-12 font-roboto">
             <a
               href="/services"
-              className="inline-flex items-center gap-2 text-gray-900 dark:text-white font-semibold hover:gap-3 transition"
+              className="inline-flex items-center gap-3  text-gray-800 dark:text-white"
             >
-              Services
-              <span>→</span>
+              {/* Services Box */}
+              <span className="px-4 py-2 border border-gray-500 dark:border-gray-600 ">
+                Services
+              </span>
+
+              {/* Arrow Box */}
+              <span className="px-3 py-2 border border-gray-500 dark:border-gray-600 "> Arrow
+                &gt;
+              </span>
             </a>
           </div>
+
         </div>
       </section>
 

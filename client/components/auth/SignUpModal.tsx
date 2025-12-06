@@ -41,7 +41,21 @@ export default function SignUpModal({ isOpen, onClose, onSuccess }: SignUpModalP
 
   return createPortal(
     <div className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-[999] px-4">
-      <div className="bg-white dark:bg-gray-900 w-full max-w-md rounded-xl shadow-xl p-8 animate-scaleIn relative">
+    <div
+      className="
+        w-[375px]
+        h-[725px]
+        bg-white dark:bg-gray-900
+        rounded-xl
+        shadow-xl
+        px-5
+        pt-12
+        pb-8
+        animate-scaleIn
+        relative
+      "
+    >
+
         
         {/* Close Button */}
         <button
@@ -51,8 +65,21 @@ export default function SignUpModal({ isOpen, onClose, onSuccess }: SignUpModalP
           <X size={22} />
         </button>
 
+        <div
+        className="
+          w-[335px]
+          h-[597px]
+          bg-white dark:bg-gray-900
+          rounded-md
+          
+          p-4
+          relative
+          flex flex-col
+          "
+          >
+
         <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">
-          Sign up
+          Sign in
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-5">
@@ -131,7 +158,9 @@ export default function SignUpModal({ isOpen, onClose, onSuccess }: SignUpModalP
           >
             Send
           </button>
+          
         </form>
+        </div>
       </div>
     </div>,
     document.body

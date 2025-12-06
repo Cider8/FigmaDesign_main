@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
+//import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -33,7 +33,14 @@ export default function Footer() {
               We respect your inbox and handle your data with care.
             </p> */}
             <div className="max-w-[500px] h-[186px] md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4 font-roboto italic">Logo</h3>
+            <h3 className="text-2xl font-bold mb-4 font-roboto italic flex items-center">
+              <img 
+                src="/icons/Logo.svg" 
+                alt="Logo" 
+                className="h-8 w-auto"
+              />
+            </h3>
+
 
             {/* FIXED: text-gray-800 changed to dark:text-gray-300 for readability */}
             <p className="text-base text-gray-700 dark:text-gray-300 mb-6">
@@ -52,7 +59,7 @@ export default function Footer() {
               />
 
               <button
-                className="px-6 py-3 font-medium bg-black text-white 
+                className="px-6 py-3 font-medium bg-white text-black 
                            dark:bg-white dark:text-black border border-gray-700"
               >
                 Subscribe
@@ -178,79 +185,62 @@ export default function Footer() {
             <div className="flex flex-col gap-5 md:justify-end">
               {/* Facebook */}
               <a href="#" className="flex items-center gap-4">
-                <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-black text-white">
-                  <svg width="20" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                    <path d="M15.12 8.5h1.88V5.5h-1.9c-1.88 0-3.12 1.1-3.12 3.12v1.38H9.5v2.5h2.48V19h2.77v-6.5h2.05l.4-2.5h-2.45V9.12c0-.6.16-.62.9-.62z" fill="#fff"/>
-                  </svg>
-                </span>
+                <img
+                  src="/icons/Facebook.svg"
+                  alt="Facebook"
+                  className="w-6 h-6"
+                  aria-hidden={false}
+                />
                 <span style={{ fontFamily: 'Roboto', fontSize: 'max-w-[61px] h-[21px]', fontWeight: 400 }}>Facebook</span>
               </a>
 
               {/* Instagram */}
               <a href="#" className="flex items-center gap-4">
-                <span className="inline-flex items-center justify-center w-6 h-6 bg-white text-gray-900">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                    <rect x="3" y="3.24" width="18" height="18" rx="4" stroke="#282424ff" strokeWidth="2.6" fill="none" />
-                    <circle cx="12" cy="12" r="3.1" stroke="#0d0b0bff" strokeWidth="1.6" fill="none" />
-                    <circle cx="17" cy="7" r="0.8" fill="#0a0a0aff" />
-                  </svg>
+                <img
+                  src="/icons/Instagram.svg"
+                  alt="Instagram"
+                  className="w-6 h-6"
+                  aria-hidden={false}
+                />
+                <span className="text-sm" style={{ fontFamily: 'Roboto', fontWeight: 400 }}>
+                  Instagram
                 </span>
-                <span style={{ fontFamily: 'Roboto', fontSize: 'max-w-[64px] h-[21px]', fontWeight: 400 }}>Instagram</span>
               </a>
+
 
               {/* X / Twitter as X */}
               <a href="#" className="flex items-center gap-4">
-                <span className="inline-flex items-center justify-center w-6 h-6 bg-white text-gray-800">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                    <path d="M18 6L6 18" stroke="#0f0f0fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M6 6L18 18" stroke="#0f0f0fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </span>
-                <span style={{ fontFamily: 'Roboto', fontSize: 'max-w-[9px] h-[21px]', fontWeight: 400 }}>X</span>
+                <img
+                  src="/icons/X.svg"
+                  alt="X"
+                  className="w-6 h-6"
+                  aria-hidden={false}
+                />
+                
+                <span className="text-sm" style={{ fontFamily: 'Roboto', fontSize: 'max-w-[9px] h-[21px]', fontWeight: 400 }}>X</span>
               </a>
 
               {/* LinkedIn */}
               <a href="#" className="flex items-center gap-4">
-                <span className="inline-flex items-center justify-center w-6 h-6 square-full bg-black text-white">
-                  <svg width="24" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                    <path d="M4.98 3.5C4.98 4.6 4.08 5.5 2.98 5.5C1.88 5.5 1 4.6 1 3.5C1 2.4 1.9 1.5 3 1.5C4.1 1.5 4.98 2.4 4.98 3.5ZM1.5 8.5H4.5V20.5H1.5V8.5ZM8.5 8.5H11.2V10H11.3C11.8 9 13.3 7.8 15.5 7.8C19 7.8 19.5 10.2 19.5 13.2V20.5H16.5V13.9C16.5 12.2 16.4 10 14 10C11.6 10 11.2 11.9 11.2 13.8V20.5H8.5V8.5Z" fill="#fff" />
-                  </svg>
-                </span>
+                  <img
+                    src="/icons/linkedin.svg"
+                    alt="Linkedin"
+                    className="w-6 h-6"
+                    aria-hidden={false}
+                  />
+                
                 <span style={{ fontFamily: 'Roboto', fontSize: 'max-w-[53px] h-[21px]', fontWeight: 400 }}>LinkedIn</span>
               </a>
 
               {/* YouTube */}
-              {/* <a href="#" className="flex items-center gap-4">
-                <span className="inline-flex items-center justify-center w-6 h-6 rect-full bg-black text-white">
-                  <svg width="20" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                    <path d="M10 8L16 12L10 16V8Z" fill="#fff" />
-                    <rect x="3" y="6" width="20" height="14" rx="2" stroke="#fff" strokeWidth="0" fill="none" />
-                  </svg>
-                </span>
-                <span style={{ fontFamily: 'Roboto, sans-serif', fontWeight: 400 }}>YouTube</span>
-              </a> */}
-              {/* YouTube */}
+              
               <a href="#" className="flex items-center gap-4">
-                <span className="inline-flex items-center justify-center">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                    className="block"
-                  >
-                    <rect
-                      x="2"
-                      y="6"
-                      width="20"
-                      height="14"
-                      rx="2"
-                      fill="black"
-                    />
-                    <path d="M10 9L15 12L10 15V9Z" fill="white" />
-                  </svg>
-                </span>
+                <img
+                  src="/icons/YouTube.svg"
+                  alt="YouTube"
+                  className="w-6 h-6"
+                  aria-hidden={false}
+                />
 
                 <span style={{ fontFamily: "Roboto", fontSize: "max-w-[55px] h-[21px]", fontWeight: 400 }}>
                   YouTube
